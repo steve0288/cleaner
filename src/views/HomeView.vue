@@ -1,8 +1,6 @@
 <template>
   <div class="home">
-    <!--<img alt="Vue logo" src="../assets/logo.png">-->
-    <!--<HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>-->
-    <div class="section section-width flex text-left">
+    <div class="section section-width flex text-left relative">
       <div>
         <h1 class="cta-header-text max-w-700">Amazing quality <span class="orange-text">cleaning service </span>agency</h1>
         <p class="max-w-500">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.</p>
@@ -21,9 +19,16 @@
       </div>
       <img src="img/cleaner-cta.png" class="cleaner-cta" alt="Professional Cleaning">
     </div>
+    <OnlineAppointments />
   </div>
 </template>
 
 <script lang="ts">
+import OnlineAppointments from '@/components/OnlineAppointments.vue'
+
+export default {
+  name: 'App',
+  components: { OnlineAppointments }
+}
 
 </script>

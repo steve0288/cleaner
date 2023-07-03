@@ -28,8 +28,7 @@
 
 <style lang="scss">
 
-$hole-crew-orange: #E99600;
-$hole-crew-orange-hover: #e99700c5;
+@import 'assets/scss/variables.scss';
 
 @font-face {
   font-family: "DM Sans";
@@ -61,46 +60,6 @@ $hole-crew-orange-hover: #e99700c5;
   color: #2c3e50;
 }
 
-*{
-  font-family: DM Sans, Helvetica, Arial, sans-serif;
-}
-
-.cta-header-text{
-  font-size: 48px;
-}
-
-.orange-text{
-  color: $hole-crew-orange;
-}
-
-.flex{
-  display: flex;
-}
-
-.text-left{
-  text-align: left;
-}
-
-.bold{
-  font-weight: bold;
-}
-
-.max-w-115{
-  max-width: 115px;
-}
-
-.max-w-400{
-  max-width: 400px;
-}
-
-.max-w-500{
-  max-width: 500px;
-}
-
-.max-w-700{
-  max-width: 700px;
-}
-
 #home{
   color: $hole-crew-orange;
 }
@@ -125,23 +84,8 @@ $hole-crew-orange-hover: #e99700c5;
   }
 }
 
-.orange-button{
-  background-color: $hole-crew-orange;
-  color: white;
-  border-radius: 4px;
-  padding: 2px 35px;
-  height: 35px;
-  border: none;
-  margin-left: 20px;
-  font-weight: 500;
-}
-
-.about-us-button{
+button.about-us-button{
   margin-left: 0;
-}
-
-.orange-button:hover{
-  background-color: $hole-crew-orange-hover;
 }
 
 .nav-contact-container{
@@ -235,5 +179,4 @@ nav {
     width: 100%;
   }
 }
-
 </style>

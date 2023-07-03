@@ -1,0 +1,63 @@
+$hole-crew-orange: #E99600;
+$hole-crew-orange-hover: #e99700c5;
+$hole-crew-navy: #002857;
+
+
+*{
+    font-family: DM Sans, Helvetica, Arial, sans-serif;
+}
+  
+.relative{
+  position: relative;
+}
+
+.cta-header-text{
+  font-size: 48px;
+}
+
+.orange-text{
+  color: $hole-crew-orange;
+}
+
+.flex{
+  display: flex;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.max-w-115{
+  max-width: 115px;
+}
+
+.max-w-400{
+  max-width: 400px;
+}
+
+.max-w-500{
+  max-width: 500px;
+}
+
+.max-w-700{
+  max-width: 700px;
+}
+
+.orange-button{
+  background-color: $hole-crew-orange;
+  color: white;
+  border-radius: 4px;
+  padding: 2px 35px;
+  height: 35px;
+  border: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.orange-button:hover{
+  background-color: $hole-crew-orange-hover;
+}

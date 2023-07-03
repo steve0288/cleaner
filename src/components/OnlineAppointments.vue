@@ -9,8 +9,41 @@
 </template>
 
 <script>
-export default {
+import axios from 'axios'
 
+export default {
+  data() {
+    return {
+      phoneNumber: '',
+      postcode: '',
+      services: ''
+    }
+  },
+  methods: {
+    sendEmail() {
+      const emailData = {
+        phoneNumber: this.phoneNumber,
+        postcode: this.postcode,
+        services: this.services
+      }
+
+      // Make an HTTP request to your server-side email endpoint
+      axios.post('/api/send-email', emailData)
+        .then(response => {
+          // Email sent successfully, handle any response if needed
+          console.log('Email sent successfully')
+        })
+        .catch(error => {
+          // Handle any error occurred during the email sending
+          console.error('Error sending email:', error)
+        })
+
+      // Reset form fields
+      this.phoneNumber = ''
+      this.postcode = ''
+      this.services = ''
+    }
+  }
 }
 </script>
 

@@ -20,10 +20,11 @@
       </div>
     </div>
     <router-view />
-    <div class="contact-us">
-    </div>
   </div>
-
+  <div class="section">
+      <h2 class="cta-h2">Cleaning is hard work. Use The Hole Crew to make your life easier!</h2>
+      <p class="max-w-600 m-auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+  </div>
 </template>
 
 <style lang="scss">
@@ -171,6 +172,7 @@ nav {
 
 .section{
   margin: 50px auto 0px auto;
+  max-width: 1000px;
 }
 
 @media only screen and (max-width: 999px){
@@ -178,5 +180,11 @@ nav {
     max-width: 80vw;
     width: 100%;
   }
+}
+
+.cta-h2{
+  max-width: 600px;
+  text-align: center;
+  margin: 90px auto 20px auto;
 }
 </style>

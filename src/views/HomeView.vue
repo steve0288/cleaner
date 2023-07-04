@@ -3,7 +3,7 @@
     <div class="section section-width flex text-left relative">
       <div>
         <h1 class="cta-header-text max-w-700">Amazing quality <span class="orange-text">cleaning service </span>agency</h1>
-        <p class="max-w-500">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.</p>
+        <p class="max-w-500 text-14">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.</p>
         <div class="flex cta-widget-container">
           <img src="img/thumbs-up.png" class="thumbs-up-icon" />
           <div class="max-w-115"><span class="bold">100%</span> Recommended</div>

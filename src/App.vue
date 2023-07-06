@@ -23,7 +23,47 @@
   </div>
   <div class="section">
       <h2 class="cta-h2">Cleaning is hard work. Use The Hole Crew to make your life easier!</h2>
-      <p class="max-w-600 m-auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+              <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            </div>
+            <div class="section flex">
+              <div class="group-container">
+                <div class="container-1">
+                  <div class="ellipses">
+                    <img src=""/>
+                  </div>
+                  <h2 class="cta-h2">We Are Bonded And Insured</h2>
+                  <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                </div>
+
+              <div class="container-2">
+                <div class="ellipses">
+                  <img src=""/>
+                </div>
+                <h2 class="cta-h2">We Are Bonded And Insured</h2>
+                <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing
+                and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+              </div>
+
+              <div class="container-3">
+                <div class="ellipses">
+                  <img src=""/>
+                </div>
+                <h2 class="cta-h2">We Are Bonded And Insured</h2>
+                <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing
+                and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+              </div>
+
+            <div class="container-4">
+              <div class="ellipses">
+                <img src=""/>
+              </div>
+              <h2 class="cta-h2">We Are Bonded And Insured</h2>
+              <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+              </div>
+            </div>
+
   </div>
 </template>
 
@@ -186,5 +226,11 @@ nav {
   max-width: 600px;
   text-align: center;
   margin: 90px auto 20px auto;
+}
+
+.group-container{
+  div{
+    max-width: 400px;
+  }
 }
 </style>

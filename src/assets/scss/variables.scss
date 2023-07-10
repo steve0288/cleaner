@@ -67,6 +67,10 @@ $hole-crew-navy: #002857;
   font-size: 14px;
 }
 
+.orange-bg{
+  background-color: $hole-crew-orange;
+}
+
 .orange-button {
   background-color: $hole-crew-orange;
   color: white;
@@ -80,4 +84,8 @@ $hole-crew-navy: #002857;
 
 .orange-button:hover {
   background-color: $hole-crew-orange-hover;
+}
+
+.center-flext-content{
+  justify-content: center;
 }

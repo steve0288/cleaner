@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="group-container">
-      <div class="container-3 active" :class="{ active: activeContainer === 3 }" @click="handleClick(3)">
+      <div class="container-3" :class="{ active: activeContainer === 3 }" @click="handleClick(3)">
         <div class="ellipses">
           <img src="img/icons/hotline.svg" class="icon"/>
         </div>
@@ -56,7 +56,18 @@ export default defineComponent({
       containerCount: 4
     }
   },
+  mounted() {
+    this.setInitialActiveContainer()
+  },
   methods: {
+    setInitialActiveContainer() {
+      const containerNumber = 3
+      const container = document.querySelector(`.container-${containerNumber}`)
+      if (container) {
+        container.classList.add('active')
+        this.activeContainer = containerNumber
+      }
+    },
     handleClick(containerNumber: number) {
       if (this.activeContainer === containerNumber) {
         this.activeContainer = null

@@ -2,7 +2,7 @@
   <form class="appointment-form">
     <label class="appointment-label">Online Appointment</label>
     <input type="tel" placeholder="Phone Number" class="appointment-phone" required/>
-    <input type="text" patten="[0-9]{4}" placeholder="Postcode" class="appointment-postcode" required/>
+    <input type="text" pattern="[0-9]{4}" placeholder="Postcode" class="appointment-postcode" required/>
     <input type="text" placeholder="Services" class="appointment-services" required/>
     <button type="submit" class="submit-button orange-button">Submit Now</button>
   </form>

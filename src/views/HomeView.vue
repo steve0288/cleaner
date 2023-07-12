@@ -20,15 +20,17 @@
       <img src="img/cleaner-cta.png" class="cleaner-cta" alt="Professional Cleaning">
     </div>
     <OnlineAppointments />
+    <BusinessAttributes />
   </div>
 </template>
 
 <script lang="ts">
 import OnlineAppointments from '@/components/OnlineAppointments.vue'
+import BusinessAttributes from '@/components/BusinessAttributes.vue'
 
 export default {
   name: 'App',
-  components: { OnlineAppointments }
+  components: { OnlineAppointments, BusinessAttributes }
 }
 
 </script>

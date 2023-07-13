@@ -1,27 +1,33 @@
 <template>
-  <form class="appointment-form">
+  <form class="appointment-form" @submit.prevent="sendEmail">
     <label class="appointment-label">Online Appointment</label>
-    <input type="tel" placeholder="Phone Number" class="appointment-phone" required/>
-    <input type="text" pattern="[0-9]{4}" placeholder="Postcode" class="appointment-postcode" required/>
-    <input type="text" placeholder="Services" class="appointment-services" required/>
+    <input v-model="phoneNumber" type="tel" placeholder="Phone Number" class="appointment-phone" required/>
+    <input v-model="postcode" type="text" pattern="[0-9]{4}" placeholder="Postcode" class="appointment-postcode" required/>
+    <select v-model="services" class="appointment-services" required>
+      <option value="service1">Service 1</option>
+      <option value="service2">Service 2</option>
+      <option value="service3">Service 3</option>
+    </select>
     <button type="submit" class="submit-button orange-button">Submit Now</button>
   </form>
 </template>
 
 <script lang="ts">
 import axios from 'axios'
+import Appointment from '@/types/Appointment'
+import { defineComponent } from 'vue'
 
-export default {
+export default defineComponent({
   data() {
     return {
       phoneNumber: '',
       postcode: '',
-      services: ''
-    }
+      services: 'service1'
+    } as Appointment
   },
   methods: {
     sendEmail() {
-      const emailData = {
+      const emailData: Appointment = {
         phoneNumber: this.phoneNumber,
         postcode: this.postcode,
         services: this.services
@@ -41,10 +47,10 @@ export default {
       // Reset form fields
       this.phoneNumber = ''
       this.postcode = ''
-      this.services = ''
+      this.services = 'service1'
     }
   }
-}
+})
 </script>
 
 <style lang="scss">

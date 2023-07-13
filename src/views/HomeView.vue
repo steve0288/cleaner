@@ -21,16 +21,18 @@
     </div>
     <OnlineAppointments />
     <BusinessAttributes />
+    <CleaningServices />
   </div>
 </template>
 
 <script lang="ts">
 import OnlineAppointments from '@/components/OnlineAppointments.vue'
 import BusinessAttributes from '@/components/BusinessAttributes.vue'
+import CleaningServices from '@/components/CleaningServices.vue'
 
 export default {
   name: 'App',
-  components: { OnlineAppointments, BusinessAttributes }
+  components: { OnlineAppointments, BusinessAttributes, CleaningServices }
 }
 
 </script>

@@ -89,3 +89,51 @@ $hole-crew-navy: #002857;
 .center-flext-content{
   justify-content: center;
 }
+
+.flex-column{
+  flex-direction: column;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-g-1{
+  flex-grow: 1;
+}
+
+.flex-g-2{
+  flex-grow: 2;
+}
+
+.flex-g-3{
+  flex-grow: 3;
+}
+
+.min-w-200{
+  min-width: 200px;
+}
+
+.min-w-300{
+  min-width: 300px;
+}
+
+.min-w-400{
+  min-width: 400px;
+}
+
+.max-w-200{
+  max-width: 200px;
+}
+
+.max-w-300{
+  max-width: 300px;
+}
+
+.max-w-400{
+  max-width: 400px;
+}
+
+.max-w-440{
+  max-width: 440px;
+}

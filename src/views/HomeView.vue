@@ -22,6 +22,7 @@
     <OnlineAppointments />
     <BusinessAttributes />
     <CleaningServices />
+    <CustomerTestimonials />
   </div>
 </template>
 
@@ -29,10 +30,11 @@
 import OnlineAppointments from '@/components/OnlineAppointments.vue'
 import BusinessAttributes from '@/components/BusinessAttributes.vue'
 import CleaningServices from '@/components/CleaningServices.vue'
+import CustomerTestimonials from '@/components/CustomerTestimonial.vue'
 
 export default {
   name: 'App',
-  components: { OnlineAppointments, BusinessAttributes, CleaningServices }
+  components: { OnlineAppointments, BusinessAttributes, CleaningServices, CustomerTestimonials }
 }
 
 </script>

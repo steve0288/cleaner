@@ -11,6 +11,10 @@ $hole-crew-navy: #002857;
   position: relative;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .cta-header-text {
   font-size: 48px;
 }
@@ -71,6 +75,13 @@ $hole-crew-navy: #002857;
   font-size: 14px;
 }
 
+.text-32{
+  font-size: 32px;
+}
+.m-50{
+  margin-right: 50px;
+}
+
 .orange-bg{
   background-color: $hole-crew-orange;
 }
@@ -90,7 +101,7 @@ $hole-crew-navy: #002857;
   background-color: $hole-crew-orange-hover;
 }
 
-.center-flext-content{
+.center-flex-content{
   justify-content: center;
 }
 

@@ -203,6 +203,11 @@ nav {
   max-width: 1000px;
 }
 
+.full-section{
+  margin: 50px auto 0px auto;
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 999px){
   .section-width{
     max-width: 80vw;

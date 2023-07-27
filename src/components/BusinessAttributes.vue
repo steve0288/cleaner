@@ -3,7 +3,7 @@
       <h2 class="cta-h2">Cleaning is hard work. Use The Hole Crew to make your life easier!</h2>
       <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
   </div>
-  <div class="section flex center-flext-content">
+  <div class="section flex flex-between">
     <div class="group-container">
       <div class="container-1" :class="{ active: activeContainer === 1 }" @click="handleClick(1)">
         <div class="ellipses">
@@ -114,7 +114,7 @@ export default defineComponent({
     .container-3,
     .container-4{
       text-align: center;
-      max-width: 350px;
+      max-width: 390px;
       width: 100%;
       box-shadow: 0px 0px 10px 0px #00000014;
       border-radius: 20px;

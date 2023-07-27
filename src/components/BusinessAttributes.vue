@@ -114,6 +114,7 @@ export default defineComponent({
     .container-3,
     .container-4{
       text-align: center;
+      min-height: 250px;
       max-width: 390px;
       width: 100%;
       box-shadow: 0px 0px 10px 0px #00000014;

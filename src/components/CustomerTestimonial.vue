@@ -3,7 +3,7 @@
       <h2 class="cta-h2">Testimonials</h2>
       <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
   </div>
-  <div class="services-section flex center-flex-content absolute">
+  <div class="services-section flex center-flex-content">
     <div class="services-container flex flex-row relative center-flex-content">
       <div class="left-container m-50">
         <img src="img/quotation.svg" class="quote-image"/>
@@ -48,6 +48,10 @@ export default defineComponent({
 
 <style lang="scss">
   @import '../assets/scss/variables.scss';
+
+  .cta-h2{
+    color: $hole-crew-navy;
+  }
 
   .right-container{
     border-radius: 15px;

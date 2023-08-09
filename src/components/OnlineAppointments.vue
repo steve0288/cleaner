@@ -57,7 +57,6 @@ export default defineComponent({
   @import '../assets/scss/variables.scss';
 
   .appointment-form{
-    margin-top: 100px;
     color: white;
     background-color: $hole-crew-navy;
     padding-top: 50px;
@@ -67,6 +66,8 @@ export default defineComponent({
     justify-content: space-between;
     display: flex;
     border-radius: 20px;
+    max-width: 1000px;
+    margin: 100px auto 0;
 
     label{
       font-weight: 500;

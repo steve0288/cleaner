@@ -19,11 +19,14 @@
         <button class="orange-button">Book Online</button>
       </div>
     </div>
-    <router-view />
   </div>
+  <router-view />
+  <CustomerTestimonials />
 </template>
 
 <script lang="ts">
+import CustomerTestimonials from '@/components/CustomerTestimonial.vue'
+
 export default {
   methods: {
     handleClick() {
@@ -94,7 +97,7 @@ export default {
 
 .navbar-header{
   max-width: 1000px;
-  margin: auto;
+  margin: 8px auto auto auto;
 }
 
 .navbar{

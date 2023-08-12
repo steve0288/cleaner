@@ -30,16 +30,22 @@
       <h2>We care about your health!</h2>
       <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
       <div class="icon-group">
-        <div class="icon-container-eco">
-          <img src="img/icons/eco.svg" alt="Eco-Friendly" class="icon">
+        <div class="group-item">
+          <div class="icon-container eco-blue">
+            <img src="img/icons/eco.svg" alt="Eco-Friendly" class="icon">
+          </div>
           <h3>Eco Friendly</h3>
         </div>
-        <div class="icon-container-child-safe">
-          <img src="img/icons/child-safe.svg" alt="Child Safe" class="icon">
+        <div class="group-item">
+          <div class="icon-container safe-pink">
+            <img src="img/icons/child-safe.svg" alt="Child Safe" class="icon">
+          </div>
           <h3>Child Safe</h3>
         </div>
-        <div class="icon-container-pet-friendly">
-          <img src="img/icons/pet-friendly.svg" alt="Pet Friendly" class="icon">
+        <div class="group-item">
+          <div class="icon-container friendly-yellow">
+            <img src="img/icons/pet-friendly.svg" alt="Pet Friendly" class="icon">
+          </div>
           <h3>Pet Friendly</h3>
         </div>
       </div>
@@ -88,28 +94,49 @@ export default {
 
 .we-care-container{
   max-width: 650px;
-  margin: auto;
+  margin-top: 70px;
+  h3{
+    font-size: 17px;
+  }
+}
+
+.icon-container{
+  height: 115px;
+  width: 115px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.group-item{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
 }
 
 .icon-group{
   max-width: 700px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
-.icon-eco{
+.eco-blue{
   background-color: #DEF4FF;
 }
-.icon-child-safe{
+.safe-pink{
   background-color: #FFEBDF;
 }
-.icon-pet-friendly{
+.friendly-yellow{
   background-color: #FFF6D0;
 }
 
 .icon{
-  max-width: 120px;
+  max-width: 59px;
   width: 100%;
-  max-height: 120px;
+  max-height: 59px;
   height: 100%;
   display: flex;
   justify-content: center;

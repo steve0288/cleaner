@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section section-width">
       <h2 class="cta-h2">Testimonials</h2>
       <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
   </div>
@@ -179,4 +179,12 @@ export default defineComponent({
     }
   }
 
+  @media screen and (max-width: 600px){
+    .right-container{
+      max-width: 70vw;
+    }
+    .left-container.m-50{
+      margin-right: 0;
+    }
+  }
 </style>

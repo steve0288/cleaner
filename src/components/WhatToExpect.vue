@@ -129,6 +129,7 @@ export default {
   }
   .mopping-image{
     max-height: 450px;
+    max-width: 80vw;
   }
   .text-container{
     max-width: unset;

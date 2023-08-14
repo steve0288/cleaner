@@ -4,7 +4,7 @@
       <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
   </div>
   <div class="services-section flex center-flex-content">
-    <div class="services-container flex flex-row relative center-flex-content">
+    <div class="services-container flex relative center-flex-content">
       <div class="left-container m-50">
         <img src="img/quotation.svg" class="quote-image"/>
         <div class="what-they-say-text">What they say about the Hole Crew</div>
@@ -78,6 +78,7 @@ export default defineComponent({
     align-items: center;
     justify-content: space-between;
     max-width: 1000px;
+    flex-direction: row;
   }
 
   .quote-image{
@@ -159,4 +160,23 @@ export default defineComponent({
   .left-arrow{
     margin-right: 10px;
   }
+
+  @media screen and (max-width: 999px){
+    .left-container,
+    .right-container{
+      max-width: 80vw;
+    }
+    .more-than-text{
+      margin-bottom: 20px;
+    }
+    .services-section,
+    .services-container{
+      height: 650px;
+    }
+    .services-container{
+      flex-direction: column;
+      padding: 0 10vw;
+    }
+  }
+
 </style>

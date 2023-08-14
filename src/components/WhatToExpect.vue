@@ -93,7 +93,6 @@ export default {
 }
 
 .we-care-container{
-  max-width: 650px;
   margin-top: 70px;
   h3{
     font-size: 17px;
@@ -120,7 +119,34 @@ export default {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin: 50px auto;
+}
+
+@media screen and (max-width: 999px){
+  .equipment-detergents-container{
+    height: unset;
+    flex-direction: column;
+  }
+  .mopping-image{
+    max-height: 450px;
+  }
+  .text-container{
+    max-width: unset;
+  }
+
+  .icon-group{
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .icon-container{
+    height: 65px;
+    width: 65px;
+    .icon{
+      max-width: 30px;
+      max-height: 30px;
+    }
+  }
 }
 
 .eco-blue{

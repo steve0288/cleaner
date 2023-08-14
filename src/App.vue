@@ -1,7 +1,5 @@
 <template>
   <div class="navbar-header">
-
-    <!--<img alt="Vue logo" src="assets/logo.png"/>-->
     <div class="navbar">
       <img class="logo" src="img/icons/the-hole-crew-icon.png" alt="Hole Crew Logo" />
       <nav>
@@ -10,8 +8,21 @@
         <a href="#prices">Prices</a>
         <a href="#about-us">About Us</a>
         <a href="#contact-us">Contact Us</a>
-        <!--<router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>-->
+      </nav>
+      <div class="nav-contact-container">
+        <img src="img/icons/phone-icon.svg" alt="Hole Crew Contact" />
+        <p> 0401705339 </p>
+        <button class="orange-button">Book Online</button>
+      </div>
+    </div>
+    <div class="navbar-mobile">
+      <img class="logo" src="img/icons/the-hole-crew-icon.png" alt="Hole Crew Logo" />
+      <nav>
+        <a href="#home" id="home">Home</a>
+        <a href="#service">Service</a>
+        <a href="#prices">Prices</a>
+        <a href="#about-us">About Us</a>
+        <a href="#contact-us">Contact Us</a>
       </nav>
       <div class="nav-contact-container">
         <img src="img/icons/phone-icon.svg" alt="Hole Crew Contact" />
@@ -21,11 +32,10 @@
     </div>
   </div>
   <router-view />
-  <CustomerTestimonials />
+
 </template>
 
 <script lang="ts">
-import CustomerTestimonials from '@/components/CustomerTestimonial.vue'
 
 export default {
   methods: {
@@ -216,6 +226,20 @@ nav {
     max-width: 80vw;
     width: 100%;
   }
+  .navbar-mobile{
+    display: flex;
+  }
+  .navbar{
+    display: none;
+  }
 }
 
+@media only screen and (min-width: 1000px){
+  .navbar-mobile{
+    display: none;
+  }
+  .navbar{
+    display: flex;
+  }
+}
 </style>

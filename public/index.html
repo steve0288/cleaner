@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <link rel="stylesheet" href="assets/css/cleaner-min.css">
+    <link rel="stylesheet" href="assets/css/cleaner-min.css?v=0.1" type="text/css">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body style="margin: 0;">
@@ -19,8 +19,8 @@
     <div class="section">
       <div class="group">
         <div class="logo-col">
-          <img src="img/icons/the-hole-crew-icon.png" alt="Hole Crew Logo">
-          <p>The Hole Crew missiong statement</p>
+          <img src="img/icons/hole-crew-logo-wh.svg" alt="Hole Crew Logo" class="logo">
+          <p>The Hole Crew mission statement</p>
         </div>
         <div class="services-col">
           <h3>Services</h3>
@@ -33,6 +33,11 @@
         </div>
         <div class="get-in-touch-col">
           <h3>Get In Touch</h3>
+          <ul>
+            <li><img src="img/icons/phone.svg" class="icon" alt="Phone"/>+91 0123456789</li>
+            <li><img src="img/icons/email.svg" class="icon" alt="Email"/>Lorem@tezark.com</li>
+            <li><img src="img/icons/web.svg" class="icon" alt="Web"/>www.chargeit.com</li>
+          </ul>
         </div>
         <div class="head-office-col">
           <h3>Head Office</h3>
@@ -41,6 +46,9 @@
             printing.</p>
         </div>
       </div>
+    </div>
+    <div class="copyright">
+      Copyright: 2023 Term & Codition Apply
     </div>
   </footer>
 </html>

@@ -18,15 +18,16 @@
     <div class="navbar-mobile">
       <img class="logo" src="img/icons/the-hole-crew-icon.png" alt="Hole Crew Logo" />
       <nav>
-        <a href="#home" id="home">Home</a>
-        <a href="#service">Service</a>
-        <a href="#prices">Prices</a>
-        <a href="#about-us">About Us</a>
-        <a href="#contact-us">Contact Us</a>
+        <ul>
+          <li><a href="#home" id="home">Home</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#prices">Prices</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
       </nav>
       <div class="nav-contact-container">
-        <img src="img/icons/phone-icon.svg" alt="Hole Crew Contact" />
-        <p> 0401705339 </p>
+        <p><img src="img/icons/phone-icon.svg" alt="Hole Crew Contact" />0401705339 </p>
         <button class="orange-button">Book Online</button>
       </div>
     </div>
@@ -228,9 +229,55 @@ nav {
   }
   .navbar-mobile{
     display: flex;
+    position: absolute;
+    background-color: white;
+    height: 100vh;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 100vw;
+    ul{
+      list-style: none;
+      text-align: center;
+      padding: 0;
+    }
+    .logo{
+      max-width: 180px;
+    }
+    .nav-contact-container{
+      flex-direction: column;
+      p{
+        display: flex;
+      }
+      img{
+        margin-right: 5px;
+      }
+    }
+    a:hover{
+      color: $hole-crew-orange;
+    }
+    a{
+      text-decoration: none;
+    }
   }
   .navbar{
     display: none;
+  }
+
+  form.appointment-form{
+    position: relative;
+    z-index: 2;
+    max-width: 60vw;
+    flex-direction: column;
+    label{
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    input, select{
+      margin-bottom: 15px;
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="section section-width flex text-left relative">
+    <div class="section section-width flex text-left relative home-section">
       <div>
         <h1 class="cta-header-text max-w-700">Amazing quality <span class="orange-text">cleaning service </span>agency</h1>
         <p class="max-w-500 text-14">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.</p>
@@ -40,3 +40,16 @@ export default {
 }
 
 </script>
+
+<style lang="scss">
+@media screen and (max-width: 999px) {
+  .home-section{
+    height: 100vh;
+  }
+
+  .appointment-form{
+    margin-top: 0;
+  }
+}
+
+</style>

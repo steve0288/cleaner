@@ -177,7 +177,8 @@ export default defineComponent({
       .container-3,
       .container-4{
         width: 100%;
-        max-width: 280px;
+        max-width: calc(80vw - 60px);
+        padding: 30px;
       }
     }
   }

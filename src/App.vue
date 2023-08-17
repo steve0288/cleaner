@@ -137,6 +137,7 @@ button.about-us-button{
     margin-left: 10px;
     display: inline-block;
     font-weight: bold;
+    margin: 10px;
   }
   p:hover{
     color: $hole-crew-orange;
@@ -242,6 +243,9 @@ nav {
       list-style: none;
       text-align: center;
       padding: 0;
+      li{
+        margin: 7px;
+      }
     }
     .logo{
       max-width: 180px;

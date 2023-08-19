@@ -186,4 +186,28 @@ export default defineComponent({
       margin-right: 0;
     }
   }
+
+  @media only screen and (max-width: 300px) {
+  .services-section.flex{
+      height: 750px;
+      .bottom-container{
+        flex-direction: column;
+      }
+      .right-container{
+        max-height: 330px;
+      }
+      .services-container{
+        height: 750px;
+      }
+    }
+    .arrow-container{
+      margin-top: 10px;
+    }
+    .bottom-container .customer-container{
+      margin-top: 10px;
+      width: 100%;
+      width: unset;
+      height: 80px;
+    }
+  }
 </style>

@@ -50,6 +50,10 @@ export default {
   .appointment-form{
     margin-top: 0;
   }
+  //Allows the mobile version to scale on smaller screens
+  .home-section .cta-widget-container{
+    display: none;
+  }
 }
 
 </style>

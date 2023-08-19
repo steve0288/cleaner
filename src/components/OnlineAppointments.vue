@@ -86,4 +86,27 @@ export default defineComponent({
       padding: 5px 40px;
     }
   }
+  @media only screen and (max-width: 999px){
+    form.appointment-form{
+      max-width: 390px;
+      position: relative;
+      z-index: 2;
+      flex-direction: column;
+      padding: 30px;
+      label{
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      input, select{
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+  form.appointment-form{
+    max-width: calc(80vw - 50px);
+  }
+}
+
 </style>

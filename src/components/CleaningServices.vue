@@ -188,11 +188,11 @@ export default defineComponent({
   }
   @media screen and (max-width: 600px){
     .left-box{
-      max-width: calc(80vw - 20px);
-      max-height: calc(80vw - 20px);
       height: 100%;
       bottom: 0;
       margin: 0;
+      max-width: 300px;
+      max-height: 300px;
     }
 
     .right-box{
@@ -226,6 +226,13 @@ export default defineComponent({
       .right-box{
         margin: 20px 0 0 0;
       }
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .left-box.relative{
+      max-height: 100%;
+      max-width: 100%;
     }
   }
 </style>

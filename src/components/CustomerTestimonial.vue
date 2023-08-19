@@ -175,7 +175,6 @@ export default defineComponent({
     }
     .services-container{
       flex-direction: column;
-      padding: 0 10vw;
     }
   }
 

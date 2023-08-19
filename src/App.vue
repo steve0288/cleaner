@@ -238,7 +238,7 @@ nav {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    width: 100vw;
+    width: 100%;
     ul{
       list-style: none;
       text-align: center;
@@ -283,6 +283,11 @@ nav {
     input, select{
       margin-bottom: 15px;
     }
+  }
+
+  //Allows the mobile version to scale on smaller screens
+  .home-section .cta-widget-container{
+    display: none;
   }
 }
 

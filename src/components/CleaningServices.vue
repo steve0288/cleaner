@@ -188,8 +188,8 @@ export default defineComponent({
   }
   @media screen and (max-width: 600px){
     .left-box{
-      max-width: 300px;
-      max-height: 300px;
+      max-width: calc(80vw - 20px);
+      max-height: calc(80vw - 20px);
       height: 100%;
       bottom: 0;
       margin: 0;

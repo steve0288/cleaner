@@ -190,25 +190,6 @@ nav {
   height: 34px;
 }
 
-.customer-image-container{
-  display: flex;
-  position: relative;
-  justify-content: left;
-  width: 115px;
-  .customer-1{
-    position: relative;
-  }
-  .customer-2{
-    left: 25px;
-  }
-  .customer-3{
-    left: 50px;
-  }
-  .customer-4{
-    left: 75px;
-  }
-}
-
 .customer-icon-position{
   position: absolute;
 }

@@ -104,9 +104,9 @@ export default defineComponent({
   }
 
   @media only screen and (max-width: 600px) {
-  form.appointment-form{
-    max-width: calc(80vw - 50px);
+    form.appointment-form{
+      max-width: calc(80vw - 50px);
+    }
   }
-}
 
 </style>

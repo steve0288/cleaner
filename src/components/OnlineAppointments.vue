@@ -34,7 +34,7 @@ export default defineComponent({
       }
 
       // Make an HTTP request to your server-side email endpoint
-      axios.post('/api/send-email', emailData)
+      axios.post('https://hole-crew-email.fly.dev/api/send-email', emailData)
         .then(response => {
           // Email sent successfully, handle any response if needed
           console.log('Email sent successfully')

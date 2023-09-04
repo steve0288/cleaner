@@ -80,6 +80,7 @@ export default {
     max-width: 40vw;
     right: 0px;
     bottom: 0px;
+    max-height: 350px;
   }
 
   .about-us-text{

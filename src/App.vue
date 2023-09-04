@@ -15,6 +15,9 @@
         <button class="orange-button">Book Online</button>
       </div>
     </div>
+    <div class="navbar-mobile-menu">
+      <button class="mobile-menu-icon"></button>
+    </div>
     <div class="navbar-mobile">
       <img class="logo" src="img/icons/the-hole-crew-icon.png" alt="Hole Crew Logo" />
       <nav>
@@ -83,6 +86,20 @@ export default {
 
 #home{
   color: $hole-crew-orange;
+}
+
+.mobile-menu-icon{
+  background: url('assets/images/menu.svg');
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding: 20px;
+  outline: none;
+  border: none;
+  color: white;
+  margin-right: 10px;
 }
 
 .ellipses{
@@ -204,11 +221,29 @@ nav {
   max-width: 100%;
 }
 
+.navbar-mobile-menu{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $hole-crew-navy;
+  height: 50px;
+  width: 100%;
+  justify-content: right;
+  padding-right: 30;
+  align-items: center;
+}
+
 @media only screen and (max-width: 999px){
+  .navbar-mobile-menu{
+    display: flex;
+  }
+
   .section-width{
     max-width: 80vw;
     width: 100%;
   }
+
   .navbar-mobile{
     display: flex;
     position: absolute;

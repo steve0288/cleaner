@@ -3,7 +3,7 @@
     <div class="section section-width flex text-left relative home-section">
       <div>
         <h1 class="cta-header-text max-w-700">Amazing quality <span class="orange-text">cleaning service </span>agency</h1>
-        <p class="max-w-500 text-14">Loremst ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.</p>
+        <p class="max-w-500 text-14 about-us-text">Loremst ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.</p>
         <div class="flex cta-widget-container">
           <img src="img/thumbs-up.png" class="thumbs-up-icon" />
           <div class="max-w-115"><span class="bold">100%</span> Recommended</div>
@@ -67,12 +67,50 @@ export default {
     height: 100vh;
   }
 
-  .appointment-form{
+  form.appointment-form{
     margin-top: 0;
+    max-width: 75vw;
   }
   //Allows the mobile version to scale on smaller screens
   .home-section .cta-widget-container{
     display: none;
+  }
+
+  .cleaner-cta{
+    max-width: 40vw;
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .about-us-text{
+    max-width: 38vw;
+  }
+
+  .cta-header-text{
+    max-width: 50vw;
+  }
+
+  .home-section{
+    height: unset;
+  }
+
+  button.about-us-button{
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .cta-header-text{
+    font-size: 30px;
+    max-width: unset;
+  }
+
+  .cleaner-cta{
+    max-width: 40vw;
+  }
+
+  form.appointment-form{
+    max-width: 65vw;
   }
 }
 

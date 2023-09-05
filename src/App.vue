@@ -1,7 +1,11 @@
 <template>
   <div class="navbar-header">
     <div class="navbar">
-      <img class="logo" src="img/icons/the-hole-crew-icon.png" alt="Hole Crew Logo" />
+      <img
+        class="logo"
+        src="img/icons/the-hole-crew-icon.png"
+        alt="Hole Crew Logo"
+      />
       <nav>
         <a href="#home" id="home">Home</a>
         <a href="#service">Service</a>
@@ -11,15 +15,19 @@
       </nav>
       <div class="nav-contact-container">
         <img src="img/icons/phone-icon.svg" alt="Hole Crew Contact" />
-        <p> 0401705339 </p>
+        <p>0401705339</p>
         <button class="orange-button">Book Online</button>
       </div>
     </div>
-    <div class="navbar-mobile-menu">
-      <button class="mobile-menu-icon"></button>
+    <div class="navbar-mobile-menu" :style="{ position: mobileMenuVisible ? 'fixed' : 'relative' }">
+      <button class="mobile-menu-icon" @click="handleClick"></button>
     </div>
-    <div class="navbar-mobile">
-      <img class="logo" src="img/icons/the-hole-crew-icon.png" alt="Hole Crew Logo" />
+    <div class="navbar-mobile" :style="{ display: mobileMenuVisible ? 'flex' : 'none' }">
+      <img
+        class="logo"
+        src="img/icons/the-hole-crew-icon.png"
+        alt="Hole Crew Logo"
+      />
       <nav>
         <ul>
           <li><a href="#home" id="home">Home</a></li>
@@ -30,29 +38,36 @@
         </ul>
       </nav>
       <div class="nav-contact-container">
-        <p><img src="img/icons/phone-icon.svg" alt="Hole Crew Contact" />0401705339 </p>
+        <p>
+          <img
+            src="img/icons/phone-icon.svg"
+            alt="Hole Crew Contact"
+          />0401705339
+        </p>
         <button class="orange-button">Book Online</button>
       </div>
     </div>
   </div>
   <router-view />
-
 </template>
 
 <script lang="ts">
-
 export default {
+  data() {
+    return {
+      mobileMenuVisible: false
+    }
+  },
   methods: {
-    handleClick() {
-      // Handle the click event
+    handleClick(this: { mobileMenuVisible: boolean }) {
+      this.mobileMenuVisible = !this.mobileMenuVisible
     }
   }
 }
 </script>
 
 <style lang="scss">
-
-@import 'assets/scss/variables.scss';
+@import "assets/scss/variables.scss";
 
 @font-face {
   font-family: "DM Sans";
@@ -84,12 +99,12 @@ export default {
   color: #2c3e50;
 }
 
-#home{
+#home {
   color: $hole-crew-orange;
 }
 
-.mobile-menu-icon{
-  background: url('assets/images/menu.svg');
+.mobile-menu-icon {
+  background: url("assets/images/menu.svg");
   width: 30px;
   height: 30px;
   background-position: center;
@@ -102,8 +117,8 @@ export default {
   margin-right: 10px;
 }
 
-.ellipses{
-  background-color: #E996001A;
+.ellipses {
+  background-color: #e996001a;
   border-radius: 100px;
   width: 50px;
   height: 50px;
@@ -114,54 +129,54 @@ export default {
   margin: auto;
 }
 
-.active .ellipses{
+.active .ellipses {
   background-color: white;
 }
 
-.icon{
+.icon {
   width: 35px;
   height: auto;
 }
 
-.navbar-header{
+.navbar-header {
   max-width: 1000px;
   margin: 8px auto auto auto;
 }
 
-.navbar{
-  display:  flex;
+.navbar {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  a{
+  a {
     text-decoration: none;
     margin-left: 20px;
     margin-right: 20px;
     font-weight: 500;
   }
-  a:hover{
+  a:hover {
     color: $hole-crew-orange;
   }
 }
 
-button.about-us-button{
+button.about-us-button {
   margin-left: 0;
 }
 
-.nav-contact-container{
+.nav-contact-container {
   display: flex;
   align-items: center;
-  p{
+  p {
     margin-left: 10px;
     display: inline-block;
     font-weight: bold;
     margin: 10px;
   }
-  p:hover{
+  p:hover {
     color: $hole-crew-orange;
   }
 }
 
-.logo{
+.logo {
   max-width: 60px;
   width: 100%;
   height: auto;
@@ -180,10 +195,10 @@ nav {
   }
 }
 
-.cleaner-cta{
+.cleaner-cta {
   max-width: 605px;
   height: auto;
-  background: url('@/../public/img/ellipse.svg');
+  background: url("@/../public/img/ellipse.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -193,7 +208,7 @@ nav {
   z-index: -1;
 }
 
-.cta-widget-container{
+.cta-widget-container {
   flex-direction: row;
   max-width: 480px;
   justify-content: space-between;
@@ -202,26 +217,28 @@ nav {
   align-items: center;
 }
 
-.thumbs-up-icon{
+.thumbs-up-icon {
   width: 33px;
   height: 34px;
 }
 
-.customer-icon-position{
+.customer-icon-position {
   position: absolute;
 }
 
-.section{
+.section {
   margin: 50px auto 0px auto;
   max-width: 1000px;
 }
 
-.full-section{
+.full-section {
   margin: 50px auto 0px auto;
   max-width: 100%;
 }
 
-.navbar-mobile-menu{
+.navbar-mobile-menu {
+  position: fixed;
+  z-index: 2;
   display: none;
   position: absolute;
   top: 0;
@@ -234,19 +251,24 @@ nav {
   align-items: center;
 }
 
-@media only screen and (max-width: 999px){
-  .navbar-mobile-menu{
-    display: flex;
+@media only screen and (max-width: 999px) {
+  .navbar-header{
+    margin: auto;
   }
 
-  .section-width{
+  .navbar-mobile-menu {
+    display: flex;
+    position: fixed;
+  }
+
+  .section-width {
     max-width: 80vw;
     width: 100%;
   }
 
-  .navbar-mobile{
+  .navbar-mobile {
     display: flex;
-    position: absolute;
+    position: fixed;
     background-color: white;
     height: 100vh;
     top: 0;
@@ -255,45 +277,44 @@ nav {
     align-items: center;
     z-index: 1;
     width: 100%;
-    ul{
+    ul {
       list-style: none;
       text-align: center;
       padding: 0;
-      li{
+      li {
         margin: 7px;
       }
     }
-    .logo{
+    .logo {
       max-width: 180px;
     }
-    .nav-contact-container{
+    .nav-contact-container {
       flex-direction: column;
-      p{
+      p {
         display: flex;
       }
-      img{
+      img {
         margin-right: 5px;
       }
     }
-    a:hover{
+    a:hover {
       color: $hole-crew-orange;
     }
-    a{
+    a {
       text-decoration: none;
     }
   }
-  .navbar{
+  .navbar {
     display: none;
   }
 }
 
-@media only screen and (min-width: 1000px){
-  .navbar-mobile{
+@media only screen and (min-width: 1000px) {
+  .navbar-mobile {
     display: none;
   }
-  .navbar{
+  .navbar {
     display: flex;
   }
 }
-
 </style>

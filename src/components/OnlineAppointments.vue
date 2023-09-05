@@ -57,6 +57,7 @@ export default defineComponent({
   @import '../assets/scss/variables.scss';
 
   .appointment-form{
+    z-index: 0;
     color: white;
     background-color: $hole-crew-navy;
     padding-top: 50px;
@@ -90,7 +91,7 @@ export default defineComponent({
     form.appointment-form{
       max-width: 390px;
       position: relative;
-      z-index: 2;
+      z-index: 0;
       flex-direction: column;
       padding: 30px;
       label{

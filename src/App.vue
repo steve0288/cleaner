@@ -19,10 +19,10 @@
         <button class="orange-button">Book Online</button>
       </div>
     </div>
-    <div class="navbar-mobile-menu" :style="{ position: mobileMenuVisible ? 'fixed' : 'relative' }">
+    <div class="navbar-mobile-menu" :class="{ 'fixed': mobileMenuVisible, 'relative': !mobileMenuVisible }">
       <button class="mobile-menu-icon" @click="handleClick"></button>
     </div>
-    <div class="navbar-mobile" :style="{ display: mobileMenuVisible ? 'flex' : 'none' }">
+    <div class="navbar-mobile" :class="{ 'flex': mobileMenuVisible, 'none': !mobileMenuVisible }">
       <img
         class="logo"
         src="img/icons/the-hole-crew-icon.png"
@@ -127,6 +127,22 @@ export default {
   justify-content: center;
   align-content: center;
   margin: auto;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.none {
+  display: none;
 }
 
 .active .ellipses {
@@ -261,6 +277,10 @@ nav {
     position: fixed;
   }
 
+  .navbar-mobile.none{
+    display: none;
+  }
+
   .section-width {
     max-width: 80vw;
     width: 100%;
@@ -311,6 +331,9 @@ nav {
 
 @media only screen and (min-width: 1000px) {
   .navbar-mobile {
+    display: none;
+  }
+  .navbar-mobile.flex{
     display: none;
   }
   .navbar {

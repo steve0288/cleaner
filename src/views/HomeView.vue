@@ -89,6 +89,7 @@ export default {
 
   .cta-header-text{
     max-width: 50vw;
+    margin-top: 0;
   }
 
   .home-section{

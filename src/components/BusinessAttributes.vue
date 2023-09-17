@@ -1,7 +1,7 @@
 <template>
   <div class="section section-width">
-      <h2 class="cta-h2">Cleaning is hard work. Use The Hole Crew to make your life easier!</h2>
-      <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+      <h2 class="cta-h2">Simplify Cleanliness with The Hole Crew – Your Path to Effortless Cleaning!</h2>
+      <p class="max-w-600 m-auto text-normal">Our experienced team is dedicated to transforming your space, ensuring a spotless and comfortable environment for you to enjoy every day.</p>
   </div>
   <div class="section flex attributes-container">
     <div class="group-container">
@@ -10,8 +10,7 @@
           <img src="img/icons/bonded-insured.svg" class="icon"/>
         </div>
         <h2 class="cta-h3">We Are Bonded And Insured</h2>
-        <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing
-    and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+        <p class="max-w-600 m-auto text-normal">Providing you with peace of mind knowing that your property and belongings are protected while we deliver top-notch cleaning services.</p>
       </div>
 
       <div class="container-2" :class="{ active: activeContainer === 2 }" @click="handleClick(2)">
@@ -19,8 +18,7 @@
             <img src="img/icons/appointment.svg" class="icon"/>
           </div>
         <h2 class="cta-h3">Weekend Appointments</h2>
-        <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing
-        and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+        <p class="max-w-600 m-auto text-normal">Available to accommodate your busy schedule, ensuring convenience and flexibility in experiencing our exceptional cleaning services.</p>
       </div>
     </div>
     <div class="group-container">
@@ -28,9 +26,8 @@
         <div class="ellipses">
           <img src="img/icons/hotline.svg" class="icon"/>
         </div>
-        <h2 class="cta-h3">Customers Hotline 24/7</h2>
-        <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing
-        and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+        <h2 class="cta-h3">Prompt Quote Turnaround</h2>
+        <p class="max-w-600 m-auto text-normal"> Count on us for swift responses, with quotes typically arriving within 24 hours, ensuring a seamless and efficient service experience.</p>
       </div>
 
       <div class="container-4" :class="{ active: activeContainer === 4 }" @click="handleClick(4)">
@@ -38,8 +35,7 @@
           <img src="img/icons/world.svg" class="icon"/>
         </div>
         <h2 class="cta-h3">Eco Friendly Cleaning Products</h2>
-        <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing
-        and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+        <p class="max-w-600 m-auto text-normal">We cater to your allergies with green cleaning solutions, ensuring a safer, healthier home.</p>
       </div>
     </div>
   </div>

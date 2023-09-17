@@ -2,33 +2,40 @@
     <div class="section section-width what-to-expect-container">
       <h2>What to Expect?</h2>
       <div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <p>The Hole Crew is your trusted partner for residential cleaning services throughout Sydney, specializing in serving house cleaning. With over 10 years of experience, our dedicated cleaning teams are available for repeat or one-time spring cleanings, perfect for refreshing your space as the seasons change.</p>
+        <p>Additionally, we're experts in maintaining a clean and sanitary environment in gyms, offices or stores and can provide customized deep cleaning solutions for both indoor and outdoor areas at competitive rates</p>
+        <p>If you ever find our services not meeting your expectations, please don't hesitate to inform us. We are committed to promptly addressing and resolving any issues related to our team's work.</p>
       </div>
     </div>
     <div class="section section-width equipment-detergents-container">
       <div class="text-container">
         <h2 class="text-left">Cleaning Equipment & Detergents</h2>
         <div class="text-left">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p>At The Hole Crew, we are sensitive to your allergy concerns and can provide products tailored to your specific requirements, ensuring a healthy environment for your family.</p>
+          <p>Our dedicated house cleaners in Sydney come fully prepared to deliver. When you request a quote, you can trust that we will be equipped with the necessary tools and materials to handle the task effectively, whether it's residential, commercial, or post-construction cleaning.</p>
           <ul>
-            <li>vacuum cleaner</li>
-            <li>sponges</li>
-            <li>mops</li>
-            <li>broom</li>
-            <li>duster</li>
-            <li>squeegee for window cleaning</li>
-            <li>rotary machines for tile and grout cleaning, etc.</li>
+            <li>Vacuum Cleaners</li>
+            <li>Brooms and Dustpans</li>
+            <li>Mops and Buckets</li>
+            <li>Microfiber Cloths and Dusters</li>
+            <li>Sponges and Scrub Brushes</li>
+            <li>Cleaning Agents</li>
+            <li>Squeegees</li>
+            <li>Steam Cleaners</li>
+            <li>Pressure Washers</li>
+            <li>Safety Gear</li>
+            <li>Trash Bags and Bins</li>
+            <li>Extension Poles</li>
+            <li>Rotary machines for tile and grout cleaning, etc.</li>
           </ul>
-          <p>unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <p class="italics">*Surcharge for rubbish collection</p>
         </div>
       </div>
       <img src="img/cleaning-services/mopping.svg" alt="Mopping" class="mopping-image">
     </div>
     <div class="section section-width we-care-container">
       <h2>We care about your health!</h2>
-      <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+      <div>We prioritize your well-being and safety. Our cleaning agents can be tailored to your environment. We have on hand products that are pet-friendly, non-toxic, and rigorously tested for domestic use.</div>
       <div class="icon-group">
         <div class="group-item">
           <div class="icon-container eco-blue">
@@ -77,7 +84,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 450px;
+  height: 550px;
   align-items: center;
 }
 

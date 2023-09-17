@@ -1,7 +1,7 @@
 <template>
   <div class="section section-width">
-      <h2 class="cta-h2">Check some of our top-rated cleaning services.</h2>
-      <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+      <h2 class="cta-h2">Explore a selection of our highest-rated cleaning solutions.</h2>
+      <p class="max-w-600 m-auto text-normal">Check some of our top-rated cleaning services that exemplify our commitment to excellence and attention to detail.</p>
   </div>
   <div class="section section-width flex image-container">
     <div class="left-box relative">
@@ -17,8 +17,8 @@
       </div>
       <div class="relative right-box">
         <div class="sub-image-overlay"></div>
-        <span class="sub-image-overlay-text">Carpet Cleaning</span>
-        <img src="img/cleaning-services/vacuuming.png" class="sub-image carpet"/>
+        <span class="sub-image-overlay-text">Grout Cleaning</span>
+        <img src="img/cleaning-services/grout-cleaning.png" class="sub-image"/>
       </div>
       <div class="relative right-box">
         <div class="sub-image-overlay"></div>
@@ -27,8 +27,8 @@
       </div>
       <div class="relative right-box">
         <div class="sub-image-overlay"></div>
-        <span class="sub-image-overlay-text">Upholstery Cleaning</span>
-        <img src="img/cleaning-services/upholstery.png" class="sub-image upholstery"/>
+        <span class="sub-image-overlay-text">Wall Cleaning</span>
+        <img src="img/cleaning-services/wall-cleaning.webp" class="sub-image upholstery"/>
       </div>
     </div>
   </div>

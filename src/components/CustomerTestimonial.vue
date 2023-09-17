@@ -1,7 +1,7 @@
 <template>
   <div class="section section-width">
       <h2 class="cta-h2">Testimonials</h2>
-      <p class="max-w-600 m-auto text-normal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+      <p class="max-w-600 m-auto text-normal">Discover why our customers rave about us! Positive customer reviews illuminate the exceptional service and teamwork delivered by the whole crew, showcasing our commitment to exceeding your expectations every time.</p>
   </div>
   <div class="services-section flex center-flex-content">
     <div class="services-container flex relative center-flex-content">
@@ -12,12 +12,12 @@
       </div>
       <div class="right-container">
         <img src="img/stars.svg" class="stars"/>
-        <div class="quote">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"</div>
+        <div class="quote">"Will and his team provided exceptional cleaning service, leaving my home spotless. Their attention to detail and friendly approach made the experience fantastic. Highly recommend!"</div>
         <div class="bottom-container">
           <div class="customer-container">
-            <img src="img/customers/resky.png" class="customer-icon"/>
+            <img src="img/customers/kon-1.webp" class="customer-icon"/>
             <div>
-              <div class="bold">Resky Fernanda</div>
+              <div class="bold">Kon Ziotas</div>
               <div>Liverpool Customer</div>
             </div>
           </div>

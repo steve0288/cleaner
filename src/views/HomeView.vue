@@ -2,8 +2,11 @@
   <div class="home">
     <div class="section section-width flex text-left relative home-section">
       <div>
-        <h1 class="cta-header-text max-w-700">Amazing quality <span class="orange-text">cleaning service </span>agency</h1>
-        <p class="max-w-500 text-14 about-us-text">Loremst ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.</p>
+        <!--Your satisfaction is our priority.-->
+        <!--Your satisfaction and comfort are our top priorities.-->
+        <!--Excellence in Every Detail, Your Cleaning Service of Choice.-->
+        <h1 class="cta-header-text max-w-700">Your <span class="orange-text">Satisfaction</span> is our <span class="orange-text">Priority</span></h1>
+        <p class="max-w-500 text-14 about-us-text">We take pride in delivering pristine spaces and unparalleled service, ensuring your complete experience is exceptional.</p>
         <div class="flex cta-widget-container">
           <img src="img/thumbs-up.png" class="thumbs-up-icon" />
           <div class="max-w-115"><span class="bold">100%</span> Recommended</div>

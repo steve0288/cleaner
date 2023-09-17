@@ -4,9 +4,12 @@
     <input v-model="phoneNumber" type="tel" placeholder="Phone Number" class="appointment-phone" required/>
     <input v-model="postcode" type="text" pattern="[0-9]{4}" placeholder="Postcode" class="appointment-postcode" required/>
     <select v-model="services" class="appointment-services" required>
-      <option value="service1">Service 1</option>
-      <option value="service2">Service 2</option>
-      <option value="service3">Service 3</option>
+      <option value="housekeeping">Housekeeping</option>
+      <option value="window-cleaning">Window Cleaning</option>
+      <option value="grout-cleaning">Grout Cleaning</option>
+      <option value="commercial-cleaning">Commercial Cleaning</option>
+      <option value="wall-cleaning">Wall Cleaning</option>
+      <option value="oven-cleaning">Kitchen Cleaning</option>
     </select>
     <button type="submit" class="submit-button orange-button">Submit Now</button>
   </form>
@@ -22,7 +25,7 @@ export default defineComponent({
     return {
       phoneNumber: '',
       postcode: '',
-      services: 'service1'
+      services: 'housekeeping'
     } as Appointment
   },
   methods: {
@@ -47,7 +50,7 @@ export default defineComponent({
       // Reset form fields
       this.phoneNumber = ''
       this.postcode = ''
-      this.services = 'service1'
+      this.services = 'housekeeping'
     }
   }
 })

@@ -1,7 +1,7 @@
 interface Appointment {
   phoneNumber: string,
   postcode: string,
-  services: 'service1' | 'service2' | 'service3'
+  services: 'housekeeping' | 'window-cleaning' | 'grout-cleaning' | 'commercial-cleaning' | 'wall-cleaning' | 'oven-cleaning'
 }
 
 export default Appointment

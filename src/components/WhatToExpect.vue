@@ -1,5 +1,5 @@
 <template>
-    <div class="section section-width what-to-expect-container">
+    <div class="section section-width what-to-expect-container" id="what-to-expect">
       <h2>What to Expect?</h2>
       <div>
         <p>The Hole Crew is your trusted partner for residential cleaning services throughout Sydney, specializing in serving house cleaning. With over 10 years of experience, our dedicated cleaning teams are available for repeat or one-time spring cleanings, perfect for refreshing your space as the seasons change.</p>

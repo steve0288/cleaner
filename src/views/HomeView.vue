@@ -18,7 +18,7 @@
           </div>
           <div class="max-w-115"><span class="bold">108+</span> Customers</div>
         </div>
-        <button class="orange-button about-us-button">More About Us</button>
+        <button class="orange-button about-us-button" @click="scrollToWhatToExpect">More About Us</button>
       </div>
       <img src="img/cleaner-cta.png" class="cleaner-cta" alt="Professional Cleaning">
     </div>
@@ -39,7 +39,15 @@ import WhatToExpect from '@/components/WhatToExpect.vue'
 
 export default {
   name: 'App',
-  components: { OnlineAppointments, BusinessAttributes, CleaningServices, CustomerTestimonials, WhatToExpect }
+  components: { OnlineAppointments, BusinessAttributes, CleaningServices, CustomerTestimonials, WhatToExpect },
+  methods: {
+    scrollToWhatToExpect() {
+      const whatToExpect = document.getElementById('what-to-expect')
+      if (whatToExpect) {
+        whatToExpect.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }
 }
 
 </script>

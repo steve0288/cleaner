@@ -181,6 +181,13 @@ export default defineComponent({
   @media screen and (max-width: 600px){
     .right-container{
       max-width: 70vw;
+      font-size: 15px;
+    }
+    .quote{
+      font-size: 15px;
+    }
+    .customer-container{
+      font-size: 12px;
     }
     .left-container.m-50{
       margin-right: 0;

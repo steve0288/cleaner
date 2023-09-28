@@ -80,11 +80,16 @@ export default defineComponent({
       max-width: 70px;
     }
 
-    input{
+    input,
+    select{
       padding: 5px 10px;
       border-radius: 4px;
       border: none;
     }
+    select{
+      padding-left: 7px;
+    }
+
     .submit-button{
       margin-left: 0;
       padding: 5px 40px;

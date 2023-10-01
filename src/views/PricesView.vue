@@ -18,11 +18,21 @@
         <div class="col">$48</div>
       </div>
     </div>
+    <div class="price-footer">
+      <div class="row">
+        <div class="col">Minimum for the service</div>
+        <div class="col"></div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-
+/* House keeping,
+Grout cleaning,
+Window cleaning,
+Wall Cleaning,
+Commercial Cleaning */
 </script>
 
 <style lang="scss">
@@ -62,11 +72,7 @@
     border-top-right-radius: 5px;
     margin: 0;
   }
-  .price-body{
-    background-color: white;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-  }
+
   .col{
     padding: 10px 15px;
     h2{
@@ -75,10 +81,24 @@
   }
 }
 
+.price-body{
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.price-body .row:nth-child(odd){
+  background-color: rgba(0,40,87,0.05);
+}
+
+.price-body .row:nth-child(even){
+  background-color: rgba(0,40,87,0.01);
+}
+
 .row{
   display: flex;
   flex-direction: row;
-  margin: 10px auto;
+  padding: 10px auto;
 }
 
 .col{

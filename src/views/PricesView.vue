@@ -21,7 +21,6 @@
     <div class="price-footer">
       <div class="row">
         <div class="col">Minimum for the service</div>
-        <div class="col"></div>
       </div>
     </div>
   </div>
@@ -65,20 +64,20 @@ Commercial Cleaning */
     width: 80px;
   }
 
-  .price-header{
-    background-color: $hole-crew-navy;
-    color: white;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    margin: 0;
-  }
-
   .col{
     padding: 10px 15px;
     h2{
       margin: 10px 0;
     }
   }
+}
+
+.price-header{
+  background-color: $hole-crew-navy;
+  color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 0;
 }
 
 .price-body{

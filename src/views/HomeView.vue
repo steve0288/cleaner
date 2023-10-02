@@ -70,6 +70,10 @@ export default {
   }
 }
 
+.about-us-text{
+  max-width: 500px;
+}
+
 @media screen and (max-width: 999px) {
   .home-section{
     height: 100vh;

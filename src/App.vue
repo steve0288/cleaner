@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="navbar-mobile-menu" :class="{ 'fixed': mobileMenuVisible, 'relative': !mobileMenuVisible }">
-      <button class="mobile-menu-icon" @click="handleClick"></button>
+      <button class="mobile-menu-icon" @click="handleClick">☰</button>
     </div>
     <div class="navbar-mobile" :class="{ 'flex': mobileMenuVisible, 'none': !mobileMenuVisible }">
       <img
@@ -104,17 +104,16 @@ export default {
 }
 
 .mobile-menu-icon {
-  background: url("assets/images/menu.svg");
-  width: 30px;
-  height: 30px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20px;
   padding: 20px;
   outline: none;
   border: none;
   color: white;
-  margin-right: 10px;
+  font-size: 28px;
+  background: none;
+}
+
+.mobile-menu-icon:hover{
+  color: rgba(255,255,255,0.5);
 }
 
 .ellipses {

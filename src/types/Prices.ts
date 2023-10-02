@@ -1,13 +1,13 @@
 // 'housekeeping' | 'window-cleaning' | 'grout-cleaning' | 'commercial-cleaning' | 'wall-cleaning' | 'oven-cleaning'
-interface CleaningService {
-    Category: string;
-    Subtitle: string;
-    TaskDescription: string;
-    Price: number;
-    MinimumNotes: string;
-  }
+export interface CleaningService {
+  Category: string;
+  Subtitle: string;
+  TaskDescription: string;
+  Price: number;
+  MinimumNotes: string;
+}
 
-const cleaningServices: CleaningService[] = [
+export const cleaningServices: CleaningService[] = [
   {
     Category: 'Housekeeping',
     Subtitle: 'Service',

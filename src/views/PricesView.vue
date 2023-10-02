@@ -1,37 +1,60 @@
 <template>
-  <div class="price-container">
-    <div class="row price-header">
-      <div class="col"><h2>Service</h2></div>
-      <div class="col"><h2>Prices</h2></div>
-    </div>
-    <div class="price-body">
-        <div class="row">
-          <div class="col">Weekly Cleaning</div>
-          <div class="col">$45</div>
-        </div>
-      <div class="row">
-        <div class="col">Fortnightly Cleaning</div>
-        <div class="col">$48</div>
-      </div>
-      <div class="row">
-        <div class="col">Catch Up Cleaning</div>
-        <div class="col">$48</div>
-      </div>
-    </div>
-    <div class="price-footer">
-      <div class="row">
-        <div class="col">Minimum for the service</div>
-      </div>
-    </div>
+  <div class="categories">
+    <div class="housekeeping" @click="selectCategory('Housekeeping')">Housekeeping</div>
+    <div class="bathroom-cleaning" @click="selectCategory('Bathroom Cleaning')">Bathroom Cleaning</div>
+    <div class="window-cleaning" @click="selectCategory('Window Cleaning')">Window Cleaning</div>
+    <div class="wall-cleaning" @click="selectCategory('Wall Cleaning')">Wall Cleaning</div>
+    <div class="commercial-cleaning" @click="selectCategory('Commercial Cleaning')">Commercial Cleaning</div>
   </div>
+    <div class="price-container">
+      <div class="row price-header">
+        <div class="col"><h2>{Category}</h2></div>
+        <div class="col"><h2>{Subtitle}</h2></div>
+      </div>
+      <div class="price-body">
+        <div class="row" v-for="service in filteredServices" :key="service.TaskDescription">
+          <div class="col">{{ service.TaskDescription }}</div>
+          <div class="col">{{ service.Price }}</div>
+        </div>
+      </div>
+      <div class="price-footer">
+        <div class="row">
+          <div class="col">{{ selectedCategoryMinimumNotes }}</div>
+        </div>
+      </div>
+    </div>
 </template>
 
 <script lang="ts">
-/* House keeping,
-Grout cleaning,
-Window cleaning,
-Wall Cleaning,
-Commercial Cleaning */
+import { CleaningService, cleaningServices } from '@/types/Prices'
+
+export default {
+  data() {
+    return {
+      selectedCategory: '' as string,
+      cleaningServiceData: cleaningServices as CleaningService[]
+    }
+  },
+  created() {
+    this.cleaningServiceData = cleaningServices
+  },
+  computed: {
+    filteredServices() {
+      return this.cleaningServiceData.filter((cleaningServiceData) =>
+        this.selectedCategory ? cleaningServiceData.Category === this.selectedCategory : true
+      )
+    },
+    selectedCategoryMinimumNotes() {
+      const selectedService = this.cleaningServiceData.find((cleaningServiceData) => cleaningServiceData.Category === this.selectedCategory)
+      return selectedService ? selectedService.MinimumNotes : ''
+    }
+  },
+  methods: {
+    selectCategory(category: string) {
+      console.log('test')
+    }
+  }
+}
 </script>
 
 <style lang="scss">

@@ -1,15 +1,15 @@
 <template>
-  <div class="categories">
-    <div class="housekeeping" @click="selectCategory('Housekeeping')">Housekeeping</div>
-    <div class="bathroom-cleaning" @click="selectCategory('Bathroom Cleaning')">Bathroom Cleaning</div>
-    <div class="window-cleaning" @click="selectCategory('Window Cleaning')">Window Cleaning</div>
-    <div class="wall-cleaning" @click="selectCategory('Wall Cleaning')">Wall Cleaning</div>
-    <div class="commercial-cleaning" @click="selectCategory('Commercial Cleaning')">Commercial Cleaning</div>
-  </div>
     <div class="price-container">
+      <div class="categories">
+        <div class="housekeeping price-button" @click="selectCategory('Housekeeping')"><img src="img/housekeeping.svg" class="price-icon"/>Housekeeping</div>
+        <div class="bathroom-cleaning price-button" @click="selectCategory('Bathroom Cleaning')"><img src="img/bathroom.svg" class="price-icon"/>Bathroom Cleaning</div>
+        <div class="window-cleaning price-button" @click="selectCategory('Window Cleaning')"><img src="img/window-cleaning.svg" class="price-icon"/>Window Cleaning</div>
+        <div class="wall-cleaning price-button" @click="selectCategory('Wall Cleaning')"><img src="img/all-purpose.svg" class="price-icon"/>Wall Cleaning</div>
+        <div class="commercial-cleaning price-button" @click="selectCategory('Commercial Cleaning')"><img src="img/commercial.svg" class="price-icon"/>Commercial Cleaning</div>
+      </div>
       <div class="row price-header">
-        <div class="col"><h2>{Category}</h2></div>
-        <div class="col"><h2>{Subtitle}</h2></div>
+        <div class="col"><h3>{{ selectedCategory }}</h3></div>
+        <div class="col"><h3>{{ selectedCategorySubtitle }}</h3></div>
       </div>
       <div class="price-body">
         <div class="row" v-for="service in filteredServices" :key="service.TaskDescription">
@@ -26,35 +26,41 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue'
 import { CleaningService, cleaningServices } from '@/types/Prices'
 
-export default {
+export default defineComponent({
   data() {
     return {
-      selectedCategory: '' as string,
-      cleaningServiceData: cleaningServices as CleaningService[]
+      selectedCategory: 'Housekeeping' as string,
+      cleaningServiceData: [] as CleaningService[]
     }
   },
-  created() {
-    this.cleaningServiceData = cleaningServices
-  },
   computed: {
-    filteredServices() {
+    filteredServices(): CleaningService[] {
       return this.cleaningServiceData.filter((cleaningServiceData) =>
         this.selectedCategory ? cleaningServiceData.Category === this.selectedCategory : true
       )
     },
-    selectedCategoryMinimumNotes() {
+    selectedCategorySubtitle(): string {
+      const selectedService = this.cleaningServiceData.find((service) => service.Category === this.selectedCategory)
+      return selectedService ? selectedService.Subtitle : ''
+    },
+    selectedCategoryMinimumNotes(): string {
       const selectedService = this.cleaningServiceData.find((cleaningServiceData) => cleaningServiceData.Category === this.selectedCategory)
       return selectedService ? selectedService.MinimumNotes : ''
     }
   },
   methods: {
     selectCategory(category: string) {
-      console.log('test')
+      this.selectedCategory = category
     }
+  },
+  created() {
+    this.cleaningServiceData = cleaningServices as CleaningService[]
   }
-}
+})
+
 </script>
 
 <style lang="scss">
@@ -76,7 +82,8 @@ export default {
   align-items: center;
   flex-direction: column;
   text-align: left;
-  margin: 10vh auto;
+  margin: auto;
+  margin-top: 10px;
   width: 290px;
 
   .col:first-child{
@@ -93,6 +100,44 @@ export default {
       margin: 10px 0;
     }
   }
+}
+
+.price-button{
+  background-color: $hole-crew-orange;
+  color: white;
+  border-radius: 5px;
+  width: 320px;
+  padding: 10px;
+  margin: 7px;
+  text-align: center;
+  position: relative;
+}
+
+.price-button:hover{
+  background-color: $hole-crew-orange-hover;
+  cursor: pointer;
+}
+
+.price-icon{
+  position: absolute;
+  height: 20px;
+  left: 10px;
+}
+
+.housekeeping{
+  margin-top: 25px;
+}
+
+.commercial-cleaning{
+  margin-bottom: 40px;
+}
+
+.categories{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .price-header{

@@ -8,10 +8,10 @@
       />
       <nav>
         <a href="/" id="home">Home</a>
-        <a href="#service">Service</a>
-        <a href="#prices">Prices</a>
-        <a href="#about-us">About Us</a>
-        <a href="#contact-us">Contact Us</a>
+        <a href="#service" @click="handleLinksClick">Service</a>
+        <a href="#prices" @click="handleLinksClick">Prices</a>
+        <a href="#about-us" @click="handleLinksClick">About Us</a>
+        <a href="#contact-us" @click="handleLinksClick">Contact Us</a>
       </nav>
       <div class="nav-contact-container">
         <img src="img/icons/phone-icon.svg" alt="Hole Crew Contact" />
@@ -31,10 +31,10 @@
       <nav>
         <ul>
           <li><a href="/" id="home">Home</a></li>
-          <li><a href="#service">Service</a></li>
-          <li><a href="#prices">Prices</a></li>
-          <li><a href="#about-us">About Us</a></li>
-          <li><a href="#contact-us">Contact Us</a></li>
+          <li><a href="#service" @click="handleLinksClick">Service</a></li>
+          <li><a href="#prices" @click="handleLinksClick">Prices</a></li>
+          <li><a href="#about-us" @click="handleLinksClick">About Us</a></li>
+          <li><a href="#contact-us" @click="handleLinksClick">Contact Us</a></li>
         </ul>
       </nav>
       <div class="nav-contact-container">
@@ -61,6 +61,9 @@ export default {
   methods: {
     handleClick(this: { mobileMenuVisible: boolean }) {
       this.mobileMenuVisible = !this.mobileMenuVisible
+    },
+    handleLinksClick(this: { mobileMenuVisible: boolean }) {
+      this.mobileMenuVisible = false
     }
   }
 }

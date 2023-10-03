@@ -95,10 +95,16 @@ export default defineComponent({
   }
 
   .col{
-    padding: 10px 15px;
+    /*padding: 10px 15px;*/
     h2{
       margin: 10px 0;
     }
+    h3{
+      margin: 0;
+    }
+  }
+  .row{
+    padding: 20px;
   }
 }
 
@@ -106,7 +112,7 @@ export default defineComponent({
   background-color: $hole-crew-orange;
   color: white;
   border-radius: 5px;
-  width: 320px;
+  width: 300px;
   padding: 10px;
   margin: 7px;
   text-align: center;

@@ -84,7 +84,7 @@ export default defineComponent({
   text-align: left;
   margin: auto;
   margin-top: 10px;
-  width: 290px;
+  max-width: 320px;
 
   .col:first-child{
     width: 200px;
@@ -99,6 +99,7 @@ export default defineComponent({
     h2{
       margin: 10px 0;
     }
+
     h3{
       margin: 0;
     }
@@ -106,6 +107,34 @@ export default defineComponent({
   .row{
     padding: 20px;
   }
+}
+
+.price-footer{
+  display: block;
+  max-width: 340px;
+  width: 100%;
+  text-align: left;
+}
+
+.price-header{
+  h3{
+    margin: 0;
+  }
+}
+
+.price-footer .row{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: $hole-crew-navy;
+  color: white;
+  .col{
+    max-width: 320px;
+    width: 100%;
+  }
+}
+
+.price-header{
+  background-color: black;
 }
 
 .price-button{

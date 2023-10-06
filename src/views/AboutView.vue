@@ -3,3 +3,21 @@
     <h1>This is an about page</h1>
   </div>
 </template>
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  data() {
+  },
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  created() {
+
+  }
+})
+</script>
+
+<style lang="scss">
+@import "../assets/scss/variables.scss";
+
+</style>

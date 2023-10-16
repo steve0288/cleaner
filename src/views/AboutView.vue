@@ -15,7 +15,7 @@
     <div><h2>Our Services</h2>From residential cleaning to commercial janitorial services, we offer a comprehensive range of cleaning solutions tailored to your unique needs. Whether it's a one-time deep clean, regular maintenance, or a specialized service, we've got you covered.</div>
     <div><h2>Our Commitment</h2>We are committed to delivering excellence in every job we undertake. Our dedication to quality, reliability, and customer satisfaction is the driving force behind everything we do. When you choose the Hole Crew, you're choosing a partner who cares about your space as much as you do.</div>
     <div><h2>Join Our Family</h2>We consider our clients to be a part of our extended family. Join us in the pursuit of cleanliness, health, and well-being. Experience the difference that a decade of expertise, extensive contacts, and friendly service can make in your life.</div>
-    <p>Thank you for considering the Hole Crew for your cleanisng needs. We look forward to serving you and exceeding your expectations. Contact us today to schedule your next cleaning appointment.</p>
+    <p>Thank you for considering the Hole Crew for your cleaning needs. We look forward to serving you and exceeding your expectations. Contact us today to schedule your next cleaning appointment.</p>
   </div>
 </template>
 <script lang="ts">
